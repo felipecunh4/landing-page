@@ -21,16 +21,16 @@ import JsonSchema from 'components/JsonSchema'
 
 const Index = (props: LandingPageProps) => (
   <>
-    <SectionHero logo={props.logo} />
-    <SectionAboutProject />
-    <SectionTech />
-    <SectionConcepts />
-    <SectionModules />
-    <SectionAgenda />
-    <PricingBox />
-    <SectionAboutUs />
-    <SectionReviews />
-    <SectionFaq />
+    <SectionHero logo={props.logo} header={props.header} />
+    <SectionAboutProject about={props.sectionAboutProject} />
+    <SectionTech {...props.sectionTech} />
+    <SectionConcepts {...props.sectionConcepts} />
+    <SectionModules {...props.sectionModules} />
+    <SectionAgenda {...props.sectionAgenda} />
+    <PricingBox {...props.pricingBox} />
+    <SectionAboutUs {...props.sectionAboutUs} />
+    <SectionReviews {...props.sectionReviews} />
+    <SectionFaq {...props.sectionFaq} />
     <Footer />
     <JsonSchema />
   </>
